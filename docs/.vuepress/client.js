@@ -1,4 +1,3 @@
-// @ts-expect-error
 import { defineClientConfig } from "vuepress/client";
 import Article from "./layouts/Article.vue";
 import Category from "./layouts/Category.vue";
@@ -6,8 +5,6 @@ import Tag from "./layouts/Tag.vue";
 import Timeline from "./layouts/Timeline.vue";
 
 export default defineClientConfig({
-  enhance({ app, router, siteData }) {},
-  setup() {},
   // we provide some blog layouts
   layouts: {
     Article,
@@ -15,5 +12,4 @@ export default defineClientConfig({
     Tag,
     Timeline,
   },
-  rootComponents: [],
 });
