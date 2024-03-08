@@ -31,6 +31,8 @@ export default defineUserConfig({
         link: "/timeline/",
       },
     ],
+    repo: "Nejoe/remember11-site",
+    docsDir: "docs",
   }),
 
   plugins: [
