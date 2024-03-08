@@ -9,10 +9,6 @@ export default defineUserConfig({
 
   title: "Remember11中文站",
   description: "Remember11非官方中文站点",
-  // 设置头部 Permissions-Policy: interest-cohort=()，禁止FLoC
-  head: [
-    ["meta", { name: "Permissions-Policy", content: "interest-cohort=()" }],
-  ],
 
   theme: defaultTheme({
     logo: "/images/icon.ico",
