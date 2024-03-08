@@ -5,30 +5,33 @@ import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
   base: "/remember11-site/",
-  lang: "en-US",
+  lang: "zh-CN",
 
-  title: "VuePress",
-  description: "My first VuePress Site",
+  title: "Remember11中文站",
+  description: "Remember11非官方中文站点",
+  // 设置头部 Permissions-Policy: interest-cohort=()，禁止FLoC
+  head: [
+    ["meta", { name: "Permissions-Policy", content: "interest-cohort=()" }],
+  ],
 
   theme: defaultTheme({
-    logo: "https://vuejs.press/images/hero.png",
+    logo: "/images/icon.ico",
 
     navbar: [
-      "/",
       {
-        text: "Article",
+        text: "文章",
         link: "/article/",
       },
       {
-        text: "Category",
+        text: "分类",
         link: "/category/",
       },
       {
-        text: "Tag",
+        text: "标签",
         link: "/tag/",
       },
       {
-        text: "Timeline",
+        text: "时间线",
         link: "/timeline/",
       },
     ],
