@@ -9,6 +9,7 @@ export default defineUserConfig({
 
   title: "Remember11中文站",
   description: "Remember11非官方中文站点",
+  head: [["link", { rel: "icon", href: "/remember11-site/images/icon.ico" }]],
 
   theme: defaultTheme({
     logo: "/images/icon.ico",

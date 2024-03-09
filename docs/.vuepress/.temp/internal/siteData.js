@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/remember11-site/\",\"lang\":\"zh-CN\",\"title\":\"Remember11中文站\",\"description\":\"Remember11非官方中文站点\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/remember11-site/\",\"lang\":\"zh-CN\",\"title\":\"Remember11中文站\",\"description\":\"Remember11非官方中文站点\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/remember11-site/images/icon.ico\"}]],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
