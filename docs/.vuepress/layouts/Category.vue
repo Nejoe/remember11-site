@@ -7,7 +7,6 @@ import { computed } from "vue";
 
 const route = useRoute();
 const categoryMap = useBlogCategory("category");
-console.log("categoryMap.value.map", categoryMap.value);
 
 // 将中文url转码
 function encodeURIChinese(url: string): string {
