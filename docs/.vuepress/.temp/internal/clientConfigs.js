@@ -6,6 +6,7 @@ import clientConfig4 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_m
 import clientConfig5 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig6 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig7 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/@vuepress/theme-default/lib/client/config.js'
+import clientConfig8 from 'C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -16,4 +17,5 @@ export const clientConfigs = [
   clientConfig5,
   clientConfig6,
   clientConfig7,
+  clientConfig8,
 ]
