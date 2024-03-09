@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "lib": ["DOM", "ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "target": "ES2022"
+  },
+  "include": [
+    // .vuepress下的所有vue文件和ts文件
+    "docs/.vuepress/**/*"
+  ],
+  "exclude": ["node_modules", ".temp", "lib", "dist"]
+}
