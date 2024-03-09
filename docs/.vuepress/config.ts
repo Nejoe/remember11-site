@@ -65,7 +65,7 @@ export default defineUserConfig({
       category: [
         {
           key: "category",
-          getter: (page) => page.frontmatter.category || [],
+          getter: (page) => (page.frontmatter.category || []) as string[],
           layout: "Category",
           itemLayout: "Category",
           frontmatter: () => ({
@@ -79,7 +79,7 @@ export default defineUserConfig({
         },
         {
           key: "tag",
-          getter: (page) => page.frontmatter.tag || [],
+          getter: (page) => (page.frontmatter.tag || []) as string[],
           layout: "Tag",
           itemLayout: "Tag",
           frontmatter: () => ({
@@ -105,8 +105,12 @@ export default defineUserConfig({
           }),
           // Sort pages with time and sticky
           sorter: (pageA, pageB) => {
-            if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
-              return pageB.frontmatter.sticky - pageA.frontmatter.sticky;
+            if (pageA.frontmatter.sticky && pageB.frontmatter.sticky) {
+              return (
+                Number(pageB.frontmatter.sticky) -
+                Number(pageA.frontmatter.sticky)
+              );
+            }
 
             if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky)
               return -1;

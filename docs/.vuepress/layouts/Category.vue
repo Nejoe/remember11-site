@@ -1,11 +1,29 @@
-<script setup>
-import { useBlogCategory } from '@vuepress/plugin-blog/client'
-import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-import { RouteLink, useRoute } from 'vuepress/client'
-import ArticleList from '../components/ArticleList.vue'
+<script setup lang="ts">
+import { useBlogCategory } from "@vuepress/plugin-blog/client";
+import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
+import { RouteLink, useRoute } from "vuepress/client";
+import ArticleList from "../components/ArticleList.vue";
+import { computed } from "vue";
 
-const route = useRoute()
-const categoryMap = useBlogCategory('category')
+const route = useRoute();
+const categoryMap = useBlogCategory("category");
+console.log("categoryMap.value.map", categoryMap.value);
+
+// 将中文url转码
+function encodeURIChinese(url: string): string {
+  return url.replace(/[\u4E00-\u9FA5]/g, function (ch) {
+    return encodeURIComponent(ch);
+  });
+}
+// 提取categoryMap.value.map中当前分类的items
+const currentItems = computed(() => {
+  // 获取当前分类的items
+  for (const [name, { items }] of Object.entries(categoryMap.value.map)) {
+    if (route.path === encodeURIChinese(categoryMap.value.map[name].path)) {
+      return items;
+    }
+  }
+});
 </script>
 
 <template>
@@ -17,7 +35,7 @@ const categoryMap = useBlogCategory('category')
             v-for="({ items, path }, name) in categoryMap.map"
             :key="name"
             :to="path"
-            :active="route.path === path"
+            :active="route.path === encodeURIChinese(path)"
             class="category"
           >
             {{ name }}
@@ -27,14 +45,14 @@ const categoryMap = useBlogCategory('category')
           </RouteLink>
         </div>
 
-        <ArticleList :items="categoryMap.currentItems ?? []" />
+        <ArticleList :items="currentItems ?? []" />
       </main>
     </template>
   </ParentLayout>
 </template>
 
 <style lang="scss">
-@use '@vuepress/theme-default/styles/mixins';
+@use "@vuepress/theme-default/styles/mixins";
 
 .category-wrapper {
   @include mixins.content_wrapper;
@@ -60,9 +78,7 @@ const categoryMap = useBlogCategory('category')
 
     cursor: pointer;
 
-    transition:
-      background 0.3s,
-      color 0.3s;
+    transition: background 0.3s, color 0.3s;
 
     @media (max-width: 419px) {
       font-size: 0.9rem;
