@@ -33,6 +33,15 @@ export default defineUserConfig({
         link: "/timeline/",
       },
     ],
+    sidebar: {
+      "/guide": [
+        {
+          text: "流程指南",
+          children: ["/guide/介绍.md", "/guide/游戏资源.md"],
+        },
+      ],
+      "/posts/": "heading",
+    },
     repo: "Nejoe/remember11-site",
     docsDir: "docs",
   }),

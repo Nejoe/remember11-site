@@ -4,7 +4,7 @@ title: 首页
 heroImage: /images/hero.png
 actions:
   - text: 入门
-    link: /get-started.html
+    link: /guide/介绍.html
     type: primary
 
   - text: 原站点
