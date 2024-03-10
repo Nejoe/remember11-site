@@ -10,8 +10,6 @@ const props = defineProps<{
   isTimeline?: boolean;
 }>();
 
-console.log(props.items);
-
 // add the base ahead of the '/images'
 const addBaseToImg = (src: string) => {
   return src.startsWith("/images") ? `${baseUrl}${src}` : src;
