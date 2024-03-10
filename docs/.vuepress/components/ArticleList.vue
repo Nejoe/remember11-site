@@ -9,16 +9,10 @@ const props = defineProps<{
   isTimeline?: boolean;
 }>();
 
-const fullPath = import.meta.url;
-const baseUrl = computed(() => {
-  // the path between the host and the rest of the url
-  // e.g. https://example.com/base/path => /base
-  const base = fullPath.match(/(http[s]?:\/\/[^/]+)(\/[^/]+)\/.*/)?.[2];
-  return base;
-});
+const baseUrl = "/remember11-site";
 // add the base ahead of the '/images'
 const addBaseToImg = (src: string) => {
-  return src.startsWith("/images") ? `${baseUrl.value}${src}` : src;
+  return src.startsWith("/images") ? `${baseUrl}${src}` : src;
 };
 // modeify the items' info's excerpt's img src,except is string
 // e.g. <img src="path" ...> => <img src="/base/path" ...>
