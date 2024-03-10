@@ -11,7 +11,8 @@
   },
   "include": [
     // .vuepress下的所有vue文件和ts文件
-    "docs/.vuepress/**/*"
+    "docs/.vuepress/**/*.ts",
+    "docs/.vuepress/**/*.vue"
   ],
   "exclude": ["node_modules", ".temp", "lib", "dist"]
 }
