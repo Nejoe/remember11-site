@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Article } from "@vuepress/plugin-blog/client";
-import { computed, onBeforeMount } from "vue";
+import { computed } from "vue";
 
 type Item = Article<Record<string, any>>;
 
@@ -16,16 +16,15 @@ const baseUrl = computed(() => {
   const base = fullPath.match(/(http[s]?:\/\/[^/]+)(\/[^/]+)\/.*/)?.[2];
   return base;
 });
-// add the base ahead of the path
-const addBase = (path: string) => {
-  return `${baseUrl.value}${path}`;
+// add the base ahead of the '/images'
+const addBaseToImg = (src: string) => {
+  return src.startsWith("/images") ? `${baseUrl.value}${src}` : src;
 };
 // modeify the items' info's excerpt's img src,except is string
-// e.g. <img src="path"> => <img src="/base/path">
+// e.g. <img src="path" ...> => <img src="/base/path" ...>
 const modifyImgSrc = (excerpt: string) => {
-  const reg = /<img.*?src="(.*?)".*?>/g;
-  return excerpt.replace(reg, (match, p1) => {
-    return match.replace(p1, addBase(p1));
+  return excerpt.replace(/<img src="([^"]+)"(.*?)>/g, (match, p1, p2) => {
+    return `<img src="${addBaseToImg(p1)}"${p2}>`;
   });
 };
 // modify all the items' info's excerpt's img src
