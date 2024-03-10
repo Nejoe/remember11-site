@@ -4,20 +4,16 @@ import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
 import { RouteLink, useRoute } from "vuepress/client";
 import ArticleList from "../components/ArticleList.vue";
 import { computed } from "vue";
+import { encodeURI } from "../utils";
 
 const route = useRoute();
 const tagMap = useBlogCategory("tag");
-// 将中文url转码
-function encodeURIChinese(url: string): string {
-  return url.replace(/[\u4E00-\u9FA5]/g, function (ch) {
-    return encodeURIComponent(ch);
-  });
-}
-// 提取tagMap.value.map中当前分类的items
+
+// 提取tagMap.value.map中当前标签的items
 const currentItems = computed(() => {
-  // 获取当前分类的items
+  // 获取当前标签的items
   for (const [name, { items }] of Object.entries(tagMap.value.map)) {
-    if (route.path === encodeURIChinese(tagMap.value.map[name].path)) {
+    if (route.path === encodeURI(tagMap.value.map[name].path)) {
       return items;
     }
   }
@@ -33,7 +29,7 @@ const currentItems = computed(() => {
             v-for="({ items, path }, name) in tagMap.map"
             :key="name"
             :to="path"
-            :active="route.path === encodeURIChinese(path)"
+            :active="route.path === encodeURI(path)"
             class="tag"
           >
             {{ name }}

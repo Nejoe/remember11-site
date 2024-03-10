@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Article } from "@vuepress/plugin-blog/client";
 import { computed } from "vue";
+import { baseUrl } from "../utils";
 
 type Item = Article<Record<string, any>>;
 
@@ -9,7 +10,8 @@ const props = defineProps<{
   isTimeline?: boolean;
 }>();
 
-const baseUrl = "/remember11-site";
+console.log(props.items);
+
 // add the base ahead of the '/images'
 const addBaseToImg = (src: string) => {
   return src.startsWith("/images") ? `${baseUrl}${src}` : src;

@@ -2,9 +2,10 @@ import { blogPlugin } from "@vuepress/plugin-blog";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { baseUrl } from "./utils";
 
 export default defineUserConfig({
-  base: "/remember11-site/",
+  base: baseUrl,
   lang: "zh-CN",
 
   title: "Remember11中文站",
