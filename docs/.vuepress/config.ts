@@ -18,7 +18,11 @@ export default defineUserConfig({
     navbar: [
       {
         text: "流程指南",
-        children: ["/guide/介绍.md", "/guide/游戏资源.md"],
+        children: [
+          "/guide/介绍.md",
+          "/guide/游戏资源.md",
+          "/guide/游戏流程.md",
+        ],
       },
       {
         text: "文章",
@@ -41,9 +45,14 @@ export default defineUserConfig({
       "/guide": [
         {
           text: "流程指南",
-          children: ["/guide/介绍.md", "/guide/游戏资源.md"],
+          children: [
+            "/guide/介绍.md",
+            "/guide/游戏资源.md",
+            "/guide/游戏流程.md",
+          ],
         },
       ],
+      "/guide/strategy/": "heading",
       "/posts/": "heading",
     },
     repo: "Nejoe/remember11-site",
