@@ -2,8 +2,7 @@
 date: 2024-03-10
 tag:
 category:
-  - Markdown
-  - 示例
+  - Markdown示例
 ---
 
 **Advertisement :)**

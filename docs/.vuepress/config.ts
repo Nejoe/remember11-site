@@ -17,6 +17,10 @@ export default defineUserConfig({
 
     navbar: [
       {
+        text: "流程指南",
+        children: ["/guide/介绍.md", "/guide/游戏资源.md"],
+      },
+      {
         text: "文章",
         link: "/article/",
       },
