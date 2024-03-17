@@ -25,6 +25,30 @@ export default defineUserConfig({
         ],
       },
       {
+        text: "剧情解析",
+        link: "/posts/转移现象/第三人格和第三地点.md",
+        children: [
+          {
+            text: "转移现象",
+            children: [
+              "/posts/转移现象/第三人格和第三地点.md",
+              "/posts/转移现象/犬伏景子和凉荫穗鸟.md",
+              "/posts/转移现象/阿尔法和欧米茄.md",
+              "/posts/转移现象/7日之中交错的轨迹.md",
+            ],
+          },
+          {
+            text: "隐藏故事",
+            children: [
+              "/posts/隐藏故事/悟，榎本，以及“我”.md",
+              "/posts/隐藏故事/Self在哪里.md",
+              "/posts/隐藏故事/优希堂沙也香.md",
+              "/posts/隐藏故事/优希堂计划.md",
+            ],
+          },
+        ],
+      },
+      {
         text: "文章",
         link: "/article/",
       },
@@ -53,17 +77,32 @@ export default defineUserConfig({
         },
       ],
       "/guide/strategy/": "heading",
-      // "/posts/": "heading",
       "/posts": [
         {
           text: "剧情解析",
           children: [
-            "/posts/第三人格和第三地点.md",
-            "/posts/犬伏景子和凉荫穗鸟.md",
-            "/posts/阿尔法和欧米茄.md",
+            {
+              text: "转移现象",
+              children: [
+                "/posts/转移现象/第三人格和第三地点.md",
+                "/posts/转移现象/犬伏景子和凉荫穗鸟.md",
+                "/posts/转移现象/阿尔法和欧米茄.md",
+                "/posts/转移现象/7日之中交错的轨迹.md",
+              ],
+            },
+            {
+              text: "隐藏故事",
+              children: [
+                "/posts/隐藏故事/悟，榎本，以及“我”.md",
+                "/posts/隐藏故事/Self在哪里.md",
+                "/posts/隐藏故事/优希堂沙也香.md",
+                "/posts/隐藏故事/优希堂计划.md",
+              ],
+            },
           ],
         },
       ],
+      // "post/转移现象/": "heading",
     },
     repo: "Nejoe/remember11-site",
     docsDir: "docs",
