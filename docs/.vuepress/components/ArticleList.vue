@@ -1,53 +1,28 @@
-<script setup lang="ts">
-import { Article } from "@vuepress/plugin-blog/client";
-import { computed } from "vue";
-import { baseUrl } from "../utils";
-
-type Item = Article<Record<string, any>>;
-
-const props = defineProps<{
-  items: Item[];
-  isTimeline?: boolean;
-}>();
-
-// add the base ahead of the '/images'
-const addBaseToImg = (src: string) => {
-  return src.startsWith("/images") ? `${baseUrl}${src}` : src;
-};
-// modeify the items' info's excerpt's img src,except is string
-// e.g. <img src="path" ...> => <img src="/base/path" ...>
-const modifyImgSrc = (excerpt: string) => {
-  return excerpt.replace(/<img src="([^"]+)"(.*?)>/g, (match, p1, p2) => {
-    return `<img src="${addBaseToImg(p1)}"${p2}>`;
-  });
-};
-// modify all the items' info's excerpt's img src
-const itemsAfterModify = computed<Item[]>(() => {
-  return props.items.map((item) => {
-    return {
-      info: {
-        ...item.info,
-        excerpt: modifyImgSrc(item.info.excerpt),
-      },
-      path: item.path,
-    };
-  });
-});
+<script setup>
+defineProps({
+  /** Article items */
+  items: {
+    type: Array,
+    required: true,
+  },
+  /** Whether is timeline or not */
+  isTimeline: Boolean,
+})
 </script>
 
 <template>
   <div class="article-wrapper">
-    <div v-if="!itemsAfterModify.length">Nothing in here.</div>
+    <div v-if="!items.length">Nothing in here.</div>
 
     <article
-      v-for="{ info, path } in itemsAfterModify"
+      v-for="{ info, path } in items"
       :key="path"
       class="article"
       @click="$router.push(path)"
     >
       <header class="title">
         {{
-          (isTimeline ? `${new Date(info.date).toLocaleDateString()}: ` : "") +
+          (isTimeline ? `${new Date(info.date).toLocaleDateString()}: ` : '') +
           info.title
         }}
       </header>
@@ -62,19 +37,19 @@ const itemsAfterModify = computed<Item[]>(() => {
         >
 
         <span v-if="info.category" class="category"
-          >Category: {{ info.category.join(", ") }}</span
+          >Category: {{ info.category.join(', ') }}</span
         >
 
-        <span v-if="info.tag" class="tag">Tag: {{ info.tag.join(", ") }}</span>
+        <span v-if="info.tag" class="tag">Tag: {{ info.tag.join(', ') }}</span>
       </div>
 
-      <div v-if="info.excerpt" class="excerpt" v-html="info.excerpt"></div>
+      <div v-if="info.excerpt" class="excerpt" v-html="info.excerpt" />
     </article>
   </div>
 </template>
 
 <style lang="scss">
-@use "@vuepress/theme-default/styles/mixins";
+@use '@vuepress/theme-default/styles/mixins';
 
 .article-wrapper {
   @include mixins.content_wrapper;
@@ -112,7 +87,7 @@ const itemsAfterModify = computed<Item[]>(() => {
     line-height: 2rem;
 
     &::after {
-      content: "";
+      content: '';
 
       position: absolute;
       bottom: 0;

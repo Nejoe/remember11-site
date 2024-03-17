@@ -1,10 +1,1 @@
-# VuePress files
-**/.vuepress/.cache/
-**/.vuepress/.temp/
-**/.vuepress/dist/
-# Dist files
-dist/
-# Node modules
-node_modules/
-# Log files
-*.log
+node_modules

@@ -1,5 +1,5 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/tag/tag-d/index.html.vue"
-const data = JSON.parse("{\"path\":\"/tag/tag-d/\",\"title\":\"Tag tag D\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Tag tag D\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"tag D\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
+import comp from "C:/Users/98159/Documents/Code/remember11-site/docs/.vuepress/.temp/pages/tag/tag-d/index.html.vue"
+const data = JSON.parse("{\"path\":\"/tag/tag-d/\",\"title\":\"Tag tag D\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Tag tag D\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"tag D\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
