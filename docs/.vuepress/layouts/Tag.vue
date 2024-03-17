@@ -1,11 +1,23 @@
-<script setup>
-import { useBlogCategory } from '@vuepress/plugin-blog/client'
-import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
-import { RouteLink, useRoute } from 'vuepress/client'
-import ArticleList from '../components/ArticleList.vue'
+<script setup lang="ts">
+import { useBlogCategory } from "@vuepress/plugin-blog/client";
+import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
+import { RouteLink, useRoute } from "vuepress/client";
+import ArticleList from "../components/ArticleList.vue";
+import { computed } from "vue";
+import { encodeURI } from "../utils";
 
-const route = useRoute()
-const tagMap = useBlogCategory('tag')
+const route = useRoute();
+const tagMap = useBlogCategory("tag");
+
+// 提取tagMap.value.map中当前标签的items
+const currentItems = computed(() => {
+  // 获取当前标签的items
+  for (const [name, { items }] of Object.entries(tagMap.value.map)) {
+    if (route.path === encodeURI(tagMap.value.map[name].path)) {
+      return items;
+    }
+  }
+});
 </script>
 
 <template>
@@ -17,7 +29,7 @@ const tagMap = useBlogCategory('tag')
             v-for="({ items, path }, name) in tagMap.map"
             :key="name"
             :to="path"
-            :active="route.path === path"
+            :active="route.path === encodeURI(path)"
             class="tag"
           >
             {{ name }}
@@ -27,14 +39,14 @@ const tagMap = useBlogCategory('tag')
           </RouteLink>
         </div>
 
-        <ArticleList :items="tagMap.currentItems ?? []" />
+        <ArticleList :items="currentItems ?? []" />
       </main>
     </template>
   </ParentLayout>
 </template>
 
 <style lang="scss">
-@use '@vuepress/theme-default/styles/mixins';
+@use "@vuepress/theme-default/styles/mixins";
 
 .tag-wrapper {
   @include mixins.content_wrapper;
@@ -60,9 +72,7 @@ const tagMap = useBlogCategory('tag')
 
     cursor: pointer;
 
-    transition:
-      background 0.3s,
-      color 0.3s;
+    transition: background 0.3s, color 0.3s;
 
     @media (max-width: 419px) {
       font-size: 0.9rem;
