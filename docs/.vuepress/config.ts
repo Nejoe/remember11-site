@@ -53,7 +53,17 @@ export default defineUserConfig({
         },
       ],
       "/guide/strategy/": "heading",
-      "/posts/": "heading",
+      // "/posts/": "heading",
+      "/posts": [
+        {
+          text: "剧情解析",
+          children: [
+            "/posts/第三人格和第三地点.md",
+            "/posts/犬伏景子和凉荫穗鸟.md",
+            "/posts/阿尔法和欧米茄.md",
+          ],
+        },
+      ],
     },
     repo: "Nejoe/remember11-site",
     docsDir: "docs",
