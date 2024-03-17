@@ -3,6 +3,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { baseUrl } from "./utils";
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default defineUserConfig({
   base: baseUrl,
@@ -214,6 +215,11 @@ export default defineUserConfig({
         },
       ],
       hotReload: true,
+    }),
+    commentPlugin({
+      provider: "Waline",
+      serverURL:
+        "https://remember11-site-comment-mjz8tte06-nejoes-projects.vercel.app/",
     }),
   ],
 

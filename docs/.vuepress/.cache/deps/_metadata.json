@@ -1,31 +1,43 @@
 {
-  "hash": "8cf3cce1",
-  "configHash": "8624bc88",
-  "lockfileHash": "d81a6399",
-  "browserHash": "2ae150e6",
+  "hash": "476cfd0e",
+  "configHash": "bd069741",
+  "lockfileHash": "b88304eb",
+  "browserHash": "e1ff91c5",
   "optimized": {
+    "@waline/client > autosize": {
+      "src": "../../../../node_modules/.pnpm/autosize@6.0.1/node_modules/autosize/dist/autosize.esm.js",
+      "file": "@waline_client___autosize.js",
+      "fileHash": "5d7d84cd",
+      "needsInterop": false
+    },
+    "@waline/client > recaptcha-v3": {
+      "src": "../../../../node_modules/.pnpm/recaptcha-v3@1.10.0/node_modules/recaptcha-v3/dist/ReCaptcha.js",
+      "file": "@waline_client___recaptcha-v3.js",
+      "fileHash": "efc0e7dd",
+      "needsInterop": true
+    },
     "@vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.6.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "@vue_devtools-api.js",
-      "fileHash": "4a8955c1",
+      "fileHash": "611e524a",
       "needsInterop": false
     },
     "@vuepress/shared": {
       "src": "../../../../node_modules/.pnpm/@vuepress+shared@2.0.0-rc.8/node_modules/@vuepress/shared/dist/index.js",
       "file": "@vuepress_shared.js",
-      "fileHash": "ef671189",
+      "fileHash": "3637a7cf",
       "needsInterop": false
     },
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.4.21/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "f3056cc1",
+      "fileHash": "cc4995d3",
       "needsInterop": false
     },
     "vue-router": {
       "src": "../../../../node_modules/.pnpm/vue-router@4.3.0_vue@3.4.21/node_modules/vue-router/dist/vue-router.esm-bundler.js",
       "file": "vue-router.js",
-      "fileHash": "62851fc7",
+      "fileHash": "b9ac065d",
       "needsInterop": false
     }
   },
@@ -35,6 +47,9 @@
     },
     "chunk-3DXR62HT": {
       "file": "chunk-3DXR62HT.js"
+    },
+    "chunk-Y2F7D3TJ": {
+      "file": "chunk-Y2F7D3TJ.js"
     }
   }
 }

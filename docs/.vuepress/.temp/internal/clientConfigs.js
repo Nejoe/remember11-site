@@ -6,7 +6,9 @@ import clientConfig4 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_m
 import clientConfig5 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/.pnpm/@vuepress+plugin-nprogress@2.0.0-rc.18_vuepress@2.0.0-rc.8/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import clientConfig6 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/.pnpm/@vuepress+plugin-theme-data@2.0.0-rc.18_vuepress@2.0.0-rc.8/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig7 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/.pnpm/@vuepress+theme-default@2.0.0-rc.20_vuepress@2.0.0-rc.8/node_modules/@vuepress/theme-default/lib/client/config.js'
-import clientConfig8 from 'C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/client.ts'
+import clientConfig8 from 'C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/sass-palette/load-hope.js'
+import clientConfig9 from 'C:/Users/98159/Documents/Code/vuepress-starter/node_modules/.pnpm/vuepress-plugin-comment2@2.0.0-rc.30_@waline+client@3.1.3_vuepress@2.0.0-rc.8/node_modules/vuepress-plugin-comment2/lib/client/config.js'
+import clientConfig10 from 'C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -18,4 +20,6 @@ export const clientConfigs = [
   clientConfig6,
   clientConfig7,
   clientConfig8,
+  clientConfig9,
+  clientConfig10,
 ]
