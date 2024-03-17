@@ -218,8 +218,7 @@ export default defineUserConfig({
     }),
     commentPlugin({
       provider: "Waline",
-      serverURL:
-        "https://remember11-site-comment-mjz8tte06-nejoes-projects.vercel.app/",
+      serverURL: "https://remember11-site-comment-nejoes-projects.vercel.app/",
     }),
   ],
 
