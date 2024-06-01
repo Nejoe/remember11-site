@@ -54,6 +54,10 @@ export default defineUserConfig({
               "/posts/未完篇章/丢失的Self篇.md",
             ],
           },
+          {
+            text: "其他细节",
+            children: ["/posts/其他细节/钟楼上的影子.md"],
+          },
         ],
       },
       {
@@ -113,6 +117,10 @@ export default defineUserConfig({
                 "/posts/未完篇章/Self的心理学隐喻.md",
                 "/posts/未完篇章/丢失的Self篇.md",
               ],
+            },
+            {
+              text: "其他细节",
+              children: ["/posts/其他细节/钟楼上的影子.md"],
             },
           ],
         },
