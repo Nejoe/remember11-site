@@ -49,7 +49,10 @@ export default defineUserConfig({
           },
           {
             text: "未完篇章",
-            children: ["/posts/未完篇章/Self的心理学隐喻.md"],
+            children: [
+              "/posts/未完篇章/Self的心理学隐喻.md",
+              "/posts/未完篇章/丢失的Self篇.md",
+            ],
           },
         ],
       },
@@ -106,7 +109,10 @@ export default defineUserConfig({
             },
             {
               text: "未完篇章",
-              children: ["/posts/未完篇章/Self的心理学隐喻.md"],
+              children: [
+                "/posts/未完篇章/Self的心理学隐喻.md",
+                "/posts/未完篇章/丢失的Self篇.md",
+              ],
             },
           ],
         },
