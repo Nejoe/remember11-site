@@ -47,6 +47,10 @@ export default defineUserConfig({
               "/posts/隐藏故事/优希堂计划.md",
             ],
           },
+          {
+            text: "未完篇章",
+            children: ["/posts/未完篇章/Self的心理学隐喻.md"],
+          },
         ],
       },
       {
@@ -99,6 +103,10 @@ export default defineUserConfig({
                 "/posts/隐藏故事/优希堂沙也香.md",
                 "/posts/隐藏故事/优希堂计划.md",
               ],
+            },
+            {
+              text: "未完篇章",
+              children: ["/posts/未完篇章/Self的心理学隐喻.md"],
             },
           ],
         },

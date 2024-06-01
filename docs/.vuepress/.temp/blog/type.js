@@ -1,4 +1,4 @@
-      export const typesMap = {"article":{"/":{"path":"/article/","indexes":[3,6,5,2,0,7,4,1]}},"timeline":{"/":{"path":"/timeline/","indexes":[3,6,5,2,0,7,4,1]}}};
+      export const typesMap = {"article":{"/":{"path":"/article/","indexes":[0,4,7,6,3,1,8,5,2]}},"timeline":{"/":{"path":"/timeline/","indexes":[0,4,7,6,3,1,8,5,2]}}};
       
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept();
