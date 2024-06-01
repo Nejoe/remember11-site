@@ -3,7 +3,7 @@ home: true
 title: 首页
 heroImage: /images/hero.png
 actions:
-  - text: 入门
+  - text: 开始
     link: /guide/游戏流程.html
     type: primary
 
@@ -19,5 +19,5 @@ features:
   - title: 高性能
     details: 为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
 
-footer: MIT 协议 | 版权所有 © 2024-至今 Remember11 社区
+footer: Remember11 中文社区
 ---

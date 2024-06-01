@@ -57,12 +57,13 @@ It is an infinity loop!</p>
 真理的世界——“Real”将会现形。<br/>
 伴随着“第三只眼”的开启——</p>
 </blockquote>
-<p>第三只眼……指的就是玩家。伴随着“玩家”您的觉醒，与之而一并被创造出来的“Real”世界会是什么样子呢？我们可以设想一下——<a href="https://www.bilibili.com/video/BV18y4y117vn/" target="_blank" rel="noopener noreferrer">或许优希堂沙也香没有被抹去，优希堂计划也根本不存在？  或许玩家的一切记忆会融合在一起，藉此创造出一个全新的世界？<ExternalLinkIcon/></a></p>
+<p>第三只眼……指的就是玩家。伴随着“玩家”您的觉醒，与之而一并被创造出来的“Real”世界会是什么样子呢？我们可以设想一下——</p>
+<p><a href="https://www.bilibili.com/video/BV1uz4y127to/" target="_blank" rel="noopener noreferrer">或许优希堂沙也香没有被抹去，优希堂计划也根本不存在<ExternalLinkIcon/></a></p>
+<p><a href="https://www.bilibili.com/video/BV18y4y117vn/" target="_blank" rel="noopener noreferrer">或许玩家的一切记忆会融合在一起，藉此创造出一个全新的世界？<ExternalLinkIcon/></a></p>
 <p><strong>而这个全新的“Real”世界，正等待着您去书写。</strong></p>
 <h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结"><span>总结</span></a></h2>
 <p>悟要为他妹妹的死复仇，所以他试图杀死<code v-pre>Self</code>。但<code v-pre>Self</code>是一个抽象的实体，远远超出了一般人的理解。他的计划则是利用了“好奇心害死猫”的概念，在<code v-pre>Self</code>寻找真理的过程中，将自己困在一个无限的循环中。这就是优希堂和《Remember11》不完整结局背后的意义。这款游戏的结局之所以显得突兀而不令人满意，是为了惩罚玩家在游戏世界中所施加的不应该施加的力量。另外，此计划也会在一些时间线中顺带拯救坠机事件的遇难者，尤其是黛。</p>
-<p>而玩家，也就是你，在意识到这一切之后，将会创造出一条全新的“Real”世界…</p>
-<p><strong>说不定这，才是优希堂计划最根本，也是最重要的目的。</strong></p>
+<p>另外还有一种理论认为，“困住 <code v-pre>Self</code>”只是优希堂计划的目的之一，计划的最终目标其实是通过困住<code v-pre>Self</code>来让“第三只眼”得到觉醒，从而创造出一个代号为“Real”的世界。</p>
 </div></template>
 
 
