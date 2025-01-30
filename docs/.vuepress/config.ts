@@ -240,7 +240,8 @@ export default defineUserConfig({
     }),
     commentPlugin({
       provider: "Waline",
-      serverURL: "https://remember11-site-comment-nejoes-projects.vercel.app/",
+      serverURL: "https://r11.comments.mcseekeri.com/",
+      turnstileKey: "0x4AAAAAAAgSnJC0FwcTFI6c",
     }),
   ],
 
