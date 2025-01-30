@@ -1,4 +1,4 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/tag/犬伏景子/index.html.vue"
+import comp from "H:/remember11-site/docs/.vuepress/.temp/pages/tag/犬伏景子/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/%E7%8A%AC%E4%BC%8F%E6%99%AF%E5%AD%90/\",\"title\":\"Tag 犬伏景子\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Tag 犬伏景子\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"犬伏景子\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

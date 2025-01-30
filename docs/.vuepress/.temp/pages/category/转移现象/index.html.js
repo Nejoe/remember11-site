@@ -1,4 +1,4 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/category/转移现象/index.html.vue"
+import comp from "H:/remember11-site/docs/.vuepress/.temp/pages/category/转移现象/index.html.vue"
 const data = JSON.parse("{\"path\":\"/category/%E8%BD%AC%E7%A7%BB%E7%8E%B0%E8%B1%A1/\",\"title\":\"Category 转移现象\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Category 转移现象\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"转移现象\",\"key\":\"category\"},\"layout\":\"Category\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

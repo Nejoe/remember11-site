@@ -1,4 +1,4 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/tag/trickster/index.html.vue"
+import comp from "H:/remember11-site/docs/.vuepress/.temp/pages/tag/trickster/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/trickster/\",\"title\":\"Tag Trickster\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Tag Trickster\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"Trickster\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

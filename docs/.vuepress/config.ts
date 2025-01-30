@@ -9,8 +9,8 @@ export default defineUserConfig({
   base: baseUrl,
   lang: "zh-CN",
 
-  title: "Remember11中文站",
-  description: "Remember11非官方中文站点",
+  title: "新.Remember11中文站（Beta）",
+  description: "资源，解密，这里什么都有",
   head: [["link", { rel: "icon", href: "/remember11-site/images/icon.ico" }]],
 
   theme: defaultTheme({
@@ -18,17 +18,28 @@ export default defineUserConfig({
 
     navbar: [
       {
+        text: "简介",
+        children: [
+          "/begin/概述.md",
+          "/begin/如何使用网站.md",
+          "/begin/关于我们.md",
+
+        ],
+      },
+      {
         text: "流程指南",
         children: [
-          "/guide/介绍.md",
-          "/guide/游戏资源.md",
-          "/guide/游戏流程.md",
+          "/guide/概述.md",
+          "/guide/通关游戏本体.md",
+          "/guide/阅读Tips和年表.md",
+          "/guide/结束.md",
         ],
       },
       {
         text: "剧情解析",
         link: "/posts/转移现象/第三人格和第三地点.md",
         children: [
+          {text:"概述",link:"/posts/概述.md",},
           {
             text: "转移现象",
             children: [
@@ -60,15 +71,34 @@ export default defineUserConfig({
           },
         ],
       },
+      {text: "周边采访",
+        link: "/keyboardWar/更新日志及留言板.md",},
+      {text: "资源合集",
+        link: "/keyboardWar/更新日志及留言板.md",},
+      {text: "相关链接",
+        link: "/keyboardWar/更新日志及留言板.md",},
+      {text: "更新日志及留言板",
+        link: "/keyboardWar/更新日志及留言板.md",},
     ],
     sidebar: {
+      "/begin": [
+        {
+        text: "简介",
+        children: [
+          "/begin/概述.md",
+          "/begin/如何使用网站.md",
+          "/begin/关于我们.md",
+          ]
+        },
+      ],
       "/guide": [
         {
           text: "流程指南",
           children: [
-            "/guide/介绍.md",
-            "/guide/游戏资源.md",
-            "/guide/游戏流程.md",
+            "/guide/概述.md",
+            "/guide/通关游戏本体.md",
+            "/guide/阅读Tips和年表.md",
+            "/guide/结束.md",
           ],
         },
       ],
@@ -77,6 +107,7 @@ export default defineUserConfig({
         {
           text: "剧情解析",
           children: [
+            {text:"概述",link:"/posts/概述.md",},
             {
               text: "转移现象",
               children: [

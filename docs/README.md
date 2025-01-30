@@ -4,20 +4,16 @@ title: 首页
 heroImage: /images/hero.png
 actions:
   - text: 开始
-    link: /guide/游戏流程.html
+    link: /begin/概述.html
     type: primary
 
-  - text: 原站点
-    link: https://remember11.com
-    type: secondary
-
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，更方便的导航栏。
-  - title: R11贴吧交流群
+  - title: 全新出发
+    details: 我们把网站重写了，省得你以为这是个三十多年历史的玩意
+  - title: 官方交流群
     details: 807734293
   - title: 友情交流
     details: 鹿鸣市立超心理学研究所-872370465
 
-footer: Remember11 中文社区
+footer: 当项目迁移到服务器上时，记得在这里填上备案号
 ---

@@ -1,30 +1,7 @@
 <template><div><h1 id="游戏流程" tabindex="-1"><a class="header-anchor" href="#游戏流程"><span>游戏流程</span></a></h1>
 <p>Remember11 并不是一款恋爱游戏，因此它仅有少量的恋爱内容，并不会对游戏流程造成任何影响。这款游戏唯一的目标就是让两位主人公齐心协力，活到游戏的结尾。</p>
 <p>以下便是游玩此游戏的推荐流程：</p>
-<h2 id="通关游戏本体" tabindex="-1"><a class="header-anchor" href="#通关游戏本体"><span>通关游戏本体</span></a></h2>
-<p>本游戏共有两大路线，心篇和悟篇，在通关心篇后即可解锁悟篇。</p>
-<p>如果您希望使用攻略游玩，我们在此提供三种攻略：</p>
-<div class="custom-container warning"><p class="custom-container-title">WARNING</p>
-<p>对于站长个人而言，我<code v-pre>不推荐</code>您查看任何攻略，因为这会破坏游戏的叙事效果。
-同时，我也不推荐初见就故意通关所有坏结局，因为这会严重破坏游戏的节奏。
-本游戏的通关难度并没有传闻中那么高，您大可尝试自行通关。</p>
-</div>
-<h3 id="游戏攻略" tabindex="-1"><a class="header-anchor" href="#游戏攻略"><span>游戏攻略</span></a></h3>
-<ol>
-<li>
-<p><RouteLink to="/guide/strategy/%E5%BF%AB%E9%80%9F%E9%80%9A%E5%85%B3.html">快速通关</RouteLink>，仅存真结局和重要 BE，适合希望快速通关重要结局的玩家。</p>
-</li>
-<li>
-<p><RouteLink to="/guide/strategy/%E5%85%A8%E6%94%B6%E9%9B%86%E9%80%9A%E5%85%B3.html">全 TIPS 全结局通关</RouteLink>，不推荐初见即使用。</p>
-</li>
-<li>
-<p><RouteLink to="/guide/strategy/%E8%AF%A6%E7%BB%86%E8%A7%A3%E6%9E%90%E9%80%9A%E5%85%B3.html">详细解析通关</RouteLink>，适合卡关时寻找通关方法的玩家。</p>
-</li>
-</ol>
-<div class="custom-container tip"><p class="custom-container-title">TIP</p>
-<p>在游戏的主菜单中依次选择 LOAD GAME——SHORT CUTS 可以进入游戏的<code v-pre>捷径</code>系统，在这里您可以在游戏的各种进度下轻松地重新开始游玩，不必担心 GAME OVER 后必须从头开始。</p>
-<p>如果您明明选择了正确的选项，却仍然触发了 BAD END，请检查是否曾经触发过另一主角的 BAD END。本游戏中的两位主角由于处于同一时间线下，因而一位主角的命运也会影响另一位主角的命运。请您再次完成一遍该主角的 GOOD END，并覆盖游戏存档，即可继续游戏。</p>
-</div>
+<p>##下载游戏本体</p>
 <h2 id="阅读-tips-和年表" tabindex="-1"><a class="header-anchor" href="#阅读-tips-和年表"><span>阅读 TIPS 和年表</span></a></h2>
 <p>由于 Remember11 是一款未完的作品，有大量的故事和细节都被放在了年表、TIPS 中。在通关了游戏本体后，您需要通过阅读 TIPS、年表来获得更多信息，才能得知故事的真相。以下为阅读它们的全部步骤：</p>
 <h3 id="完成全部重要结局" tabindex="-1"><a class="header-anchor" href="#完成全部重要结局"><span>完成全部重要结局</span></a></h3>

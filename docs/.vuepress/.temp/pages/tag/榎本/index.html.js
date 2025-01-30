@@ -1,4 +1,4 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/tag/榎本/index.html.vue"
+import comp from "H:/remember11-site/docs/.vuepress/.temp/pages/tag/榎本/index.html.vue"
 const data = JSON.parse("{\"path\":\"/tag/%E6%A6%8E%E6%9C%AC/\",\"title\":\"Tag 榎本\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Tag 榎本\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"榎本\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 

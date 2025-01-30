@@ -1,4 +1,4 @@
-import comp from "C:/Users/98159/Documents/Code/vuepress-starter/docs/.vuepress/.temp/pages/category/隐藏故事/index.html.vue"
+import comp from "H:/remember11-site/docs/.vuepress/.temp/pages/category/隐藏故事/index.html.vue"
 const data = JSON.parse("{\"path\":\"/category/%E9%9A%90%E8%97%8F%E6%95%85%E4%BA%8B/\",\"title\":\"Category 隐藏故事\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Category 隐藏故事\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"隐藏故事\",\"key\":\"category\"},\"layout\":\"Category\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
