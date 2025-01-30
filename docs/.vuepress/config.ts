@@ -60,22 +60,6 @@ export default defineUserConfig({
           },
         ],
       },
-      {
-        text: "文章",
-        link: "/article/",
-      },
-      {
-        text: "分类",
-        link: "/category/",
-      },
-      {
-        text: "标签",
-        link: "/tag/",
-      },
-      {
-        text: "时间线",
-        link: "/timeline/",
-      },
     ],
     sidebar: {
       "/guide": [
@@ -127,7 +111,6 @@ export default defineUserConfig({
       ],
       // "post/转移现象/": "heading",
     },
-    repo: "Nejoe/remember11-site",
     docsDir: "docs",
   }),
 
